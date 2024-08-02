@@ -3,31 +3,66 @@ import React from "react";
 import GameCircle from "./GameCircle";
 
 const GameBoard = () => {
+    const style = {
+        display: 'grid', 
+        gridTemplateColumns: '1fr 1fr 1fr 1fr', 
+        gridTemplateRows: '1fr 1fr 1fr 1fr', 
+        padding: 20, 
+        width: 500,
+        position: 'absolute', 
+        left: '50%',
+        marginLeft: '-25%',
+        top: '25%'
+    }
     return (
-        <div>
-            <GameCircle id={1} value={5}>
-                Red
+        <div style={style}>
+            <GameCircle id={1} color="red">
+    
             </GameCircle>
-            <GameCircle id={2} value={6}>
-                Blue
+            <GameCircle id={2} color="blue">
+
             </GameCircle>
-            <GameCircle id={3}>
-                Red
+            <GameCircle id={3} color="red">
+
             </GameCircle>
-            <GameCircle id={4}>
-                Blue
+            <GameCircle id={4} color="blue">
+
             </GameCircle>
-            <GameCircle id={5}>
-                Red
+            <GameCircle id={5} color="red">
+
             </GameCircle>
-            <GameCircle id={6}>
-                Blue
+            <GameCircle id={6} color="blue">
+
             </GameCircle>
-            <GameCircle id={7}>
-                Red
+            <GameCircle id={7} color="red">
+
             </GameCircle>
-            <GameCircle id={8}>
-                Blue
+            <GameCircle id={8} color="blue">
+
+            </GameCircle>
+            <GameCircle id={9} color="red">
+    
+            </GameCircle>
+            <GameCircle id={10} color="blue">
+
+            </GameCircle>
+            <GameCircle id={11} color="red">
+
+            </GameCircle>
+            <GameCircle id={12} color="blue">
+
+            </GameCircle>
+            <GameCircle id={13} color="red">
+
+            </GameCircle>
+            <GameCircle id={14} color="blue">
+
+            </GameCircle>
+            <GameCircle id={15} color="red">
+
+            </GameCircle>
+            <GameCircle id={16} color="blue">
+
             </GameCircle>
         </div>
     )
